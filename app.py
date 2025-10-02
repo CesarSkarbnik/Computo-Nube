@@ -1,15 +1,19 @@
 import os
+# Línea 2: CORREGIDA. 'Flask' debe ser 'flask' (minúscula).
 from flask import Flask, request, jsonify, render_template, redirect, url_for
+# Línea 4: CORREGIDA. 'Flask_sqlalchemy' debe ser 'flask_sqlalchemy' (minúscula).
 from flask_sqlalchemy import SQLAlchemy
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 #Cargar las variables de entorno
-load_dotenv()
+#load_dotenv()
 
 #crear instancia
-app =  Flask(__name__)
+app = Flask(__name__)
 
 # Configuración de la base de datos PostgreSQL
+# NOTA: Asegúrate de que tu variable de entorno 'DATABASE_URL' esté definida,
+# ya sea en un archivo .env o directamente en tu shell de PowerShell.
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
