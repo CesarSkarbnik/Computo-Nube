@@ -1,9 +1,6 @@
 import os
-# Línea 2: CORREGIDA. 'Flask' debe ser 'flask' (minúscula).
-from flask import flask, request, jsonify, render_template, redirect, url_for
-# Línea 4: CORREGIDA. 'Flask_sqlalchemy' debe ser 'flask_sqlalchemy' (minúscula).
+from flask import Flask, request, jsonify, render_template, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
-#from dotenv import load_dotenv
 
 #Cargar las variables de entorno
 #load_dotenv()
