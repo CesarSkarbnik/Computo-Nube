@@ -15,7 +15,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
-
+#nuevo cambios para commit
 #Modelo de la base de datos
 class Estudiante(db.Model):
     __tablename__ = 'estudiantes'
