@@ -17,6 +17,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 #nuevo cambios para commit
 #Modelo de la base de datos
+#Otro cambio 2
+#das
 class Estudiante(db.Model):
     __tablename__ = 'estudiantes'
     no_control = db.Column(db.String, primary_key=True)
